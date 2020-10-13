@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Dixit</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-color:lightblue;
+            animation-name: three;
+            animation-duration:1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            transition: 2s linear all;
+            animation-delay:0s;
+        }
+        .circle{
+            border: 2px solid red;
+            background-color: lightcoral;
+            background:url("https://media-exp1.licdn.com/dms/image/C5603AQHG2HBfNZ1PWw/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=DrOwRd8EgCLZKq5pdfSMCDVFC5_d7JIL9lzHi6cdWzA");
+            color:white;
+            border-radius: 100%;
+            display:block;
+            width:100px;
+            height:100px;
+            margin-left:auto;
+            margin-top: 15%;
+            padding:40px;
+            margin-right:auto;
+            animation-name:one;
+            animation-delay: 0s;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transition:all 2s linear;
+            }
+            @keyframes one {
+                0%{
+                    border-color: red;
+                    
+                    transform: rotateY(0deg);
+                }
+                20%{
+                    border-color: blue;
+                    transform: rotateY(60deg);
+                }
+                50%{
+                    border-color: yellow;
+                    transform: rotateY(180deg);
+                }
+                70%{
+                    border-color: tomato;
+                    transform: rotateZ(270deg);
+                }
+                100%{
+                    border-color:green;
+                    transform: rotateZ(360deg);
+                }
+            }
+            h3{
+                text-align: center;
+                margin-top:80px;
+                animation-name: two;
+                animation-delay: 0s;
+                animation-timing-function: ease-in-out;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+                transition:all 2s linear;
+            }
+            @keyframes two{
+                0%{
+                    border-color: red;
+                    color:#1B9CFC;
+                    transform: rotateY(0deg);
+                }
+                20%{
+                    border-color: blue;
+                    color:#1B9CFC;
+                    transform: rotateY(60deg);
+                }
+                50%{
+                    border-color: yellow;
+                    color:#1B9CFC;
+                    transform: rotateY(180deg);
+                }
+                70%{
+                    border-color: tomato;
+                    color:white;
+                    transform: rotateZ(240deg);
+                }
+                100%{
+                    border-color:green;
+                    color:white;
+                    transform: rotateZ(360deg);
+                }
+
+            }
+            @keyframes three{
+                0%{
+                    background:#1B9CFC;
+                }
+               
+                50%{
+                    background: white;
+                }
+               
+                100%{
+                    background:#1B9CFC;
+                }
+            }
+    </style>
+</head>
+<body>
+     <div class="circle">
+         <h3>Aman Dixit</h3>
+     </div>
+     <a href="profile.html" id="button" style="display:none;">Proceed</a>
+     <script>
+        const button = document.getElementById("button");
+         setTimeout(()=>{
+         button.click();
+         },4500);
+     </script>
+</body>
+
+</html>
