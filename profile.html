@@ -7,44 +7,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--Google Meta Tags -->
   <meta name="google-site-verification" content="iKsJ6jGtEDhX9Z6a47T-S4UmM7vrB3cKrwW1RJg8kNU" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Sedgwick+Ave&display=swap" rel="stylesheet">
   <!-- Font Awesome CDN-->
   <script src="https://use.fontawesome.com/2f6bccba41.js"></script>
   <title>Aman Dixit|Web Dev</title>
 </head>
 
-<body>
+<body style="background: url(img/background.jpg);">
   <!-- Navbar -->
-  <ul class="nav justify-content-end sticky-top" id="navbar">
-    <li class="nav-item">
-      <a class="nav-link active" href="#welcome-section">About</a>
+  <ul class="nav justify-content-end fixed-top d-flex align-items-center" id="navbar">
+    <li class="navbar-brand  d-flex align-items-center justify-content-center" id="logo" style="font-family: 'Sedgwick Ave', cursive;">AD</li>   
+    <li class="nav-item d-flex align-items-center justify-content-center icon" id="i1">
+      <a class="nav-link" href="#education" >
+        <i class="fa fa-graduation-cap" aria-hidden="true" style="color:black;font-size:2rem;" ></i></a>
+        <span class="badge badge-dark" id="t1" style="position:absolute;top:100px;">Education</span>
+       
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#projects">Work</a>
+    <li class="nav-item d-flex align-items-center justify-content-center icon" id="i2">
+      <a class="nav-link" href="#projects" >
+        <i class="fa fa-laptop" aria-hidden="true" style="color:black;font-size:2rem;" ></i></a>
+        <span class="badge badge-dark" id="t2" style="position:absolute;top:100px;">Projects</span>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#footer">Contact</a>
+    <li class="nav-item d-flex align-items-center justify-content-center icon" id="i3">
+      <a class="nav-link" href="#skills" >
+        <i  aria-hidden="true" style="color:black;font-size:2rem;" >&lt;/&gt;</i></a>
+        <span class="badge badge-dark" id="t3" style="position:absolute;top:100px;">Skills</span>
     </li>
+   
+    
   </ul>
-
-  <section id="welcome-section">
+  <!-- Intro Section-->
+  <section id="welcome-section" style="padding-bottom: 10px;">
     <img
       src="https://media-exp1.licdn.com/dms/image/C5603AQHG2HBfNZ1PWw/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=DrOwRd8EgCLZKq5pdfSMCDVFC5_d7JIL9lzHi6cdWzA"
       id="profile_img" alt="profile_img">
-    <h1 style="text-align:center;color:#1B9CFC"> I'm ,<span id="space">_</span></h1>
-    <p style="text-align: center;" id="one">Aman Dixit</p>
-    <p id="about-content" style="color:#1B9CFC">I have explored the world of Full Stack Development for quite ,
-      enough for me to say it has turned into a passion for me now .</p>
+    <h1 style="text-align:center;color:#1B9CFC">I'm</h1>
+    <p style="text-align: center;font-family: 'Montserrat', sans-serif;font-size:2.5rem;font-weight: 800;" id="one"><span style="font-size:3rem;">&lt;</span>
+      <span style="font-size:3.4rem;font-weight:900;">A</span>MAN <span style="font-size:3.4rem;">D</span>IXIT 
+      /<span style="font-size:3rem;">&gt;</span><span id="space">_</span></p>
+    <p id="about-content" style="color:#1B9CFC;font-weight:lighter;">I have explored the world of Full Stack Development for quite ,
+      enough for me to say it has turned into a passion for me now.I am an Open source Enthusiast who loves in contributing to other's project.A True Team Man and a spirited Person with great Passion for Collabrating.</p>
       <a href="#" style="display:block;width:150px;height:40px;margin-left:auto;margin-right: auto;margin-top:40px;padding-top:10px;" class="btn btn-primary btn-sm">Get CV</a>
-  </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
 
   <!-- Projects-->
-  <section id="projects">
-    <div id="title" style="color:white;">Projects</div>
+<!--  <section id="projects">
+    <div id="title" 
+    style="color:white;background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;"><span style="font-size:3.5rem">P</span>ROJECTS</div>
     <div class="row" id="my-project" style="margin-left:-20px;">
       <div class="col-12 col-md-6 col-lg-4 my-3 cone  d-flex justify-content-center">
         <div class="card project-title" style="width:18rem;">
@@ -91,8 +116,7 @@
           <a href="https://iplheat.herokuapp.com/">
             <img src="img/img2.png" class="card-img-top" alt="iplheat">
             <div class="card-body">
-              <h5 class="card-title" style="text-align: center;color:#1B9CFC"></h5>
-
+              <h5 class="card-title" style="text-align: center;color:#1B9CFC">IplHeat</h5>
             </div>
           </a>
         </div>
@@ -107,37 +131,314 @@
             </div>
           </a>
         </div>
-
       </div>
     </div>
-  </section>
-
-  <!-- Academics Details -->
-<section id="education">
-  <div id="education-header">
-      <h2 style="color:#ffffff">Education</h2>
+  </section> -->
+<!-- Experiment-->
+<section id="projects">
+  <div id="title" 
+  style="color:white;background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;"><span style="font-size:3.5rem">P</span>ROJECTS</div>
+  <div class="row" id="my-project" style="margin-left:auto;display:flex;justify-content: center;">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+           <img src="img/symptoms.png" class="card-img-top" alt="corona-website">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">Covid19 Info</h5>
+              </div>
+         </div>
+      <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+          1.Chatbot which tells about your Probability of being Corona Postive
+          <br>2.Covid 19 Total Case Using an APIs
+          <br>3.Precautions and Symptomps Section along with FAQ</p>
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">Bootstrap</span>
+          <span class="badge badge-dark">BOT UI</span>
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/korona-" target="_blank" style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://lazy-corona.netlify.app/" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+         
+        </div>
+      </div>
     </div>
-    <div class="row" id="my-education" style="margin-left:0px;">
-      <div class="col-12 col-md-6  d-flex justify-content-center">
-        <div class="card" id="e-card">
-          <img src="img/e-1.jpg" class="e-img">
-          <div class="card-body" style="color:#1B9CFC">
-            <h5 class="card-title" style="text-align: center;">Children Public Sr. Sec. School</h5>
-            <p style="text-align: center;">First Tower, Hanoi 20314</p>
-            <h4 style="text-align: center;">Academic Record</h4>
-            <p class="lead" style="text-align: center;">Class:10-<strong>9.6 cgpa</strong></p>
-            <p class="lead" style="text-align: center;">Class:12-<strong>90%</strong></p>
-
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+            
+              <img src="img/2.png" class="card-img-top" alt="calculator-image">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">JS Calculator</h5>
+              </div>
+           
+         </div>
+        <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align: center;font-size:0.8rem;">1.Mathematical and Trignometrical Calculations</p>
+          <h2>Tech-Stack</h2>
+        <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/calc" target="_blank" style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://aman123956.github.io/calc" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6  d-flex justify-content-center">
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+           
+              <img src="img/connect.png" class="card-img-top" alt="jss-connect">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">JSS Connect</h5>
+              </div>
+           
+          </div>
+    <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+           1.Blogs Sections<br>
+           2.Resource Section<br>
+           3.Google Authentication<br>
+           4.Commuunity Section to interact with others<br>
+
+          </p>
+      
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">Materialize</span>
+          <span class="badge badge-dark">NODEJS</span>
+          <span class="badge badge-dark">MongoDB</span>
+          <span class="badge badge-dark">Passport JS</span>
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/jssconnect" target="_blank" style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://jssconnect.herokuapp.com" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+           
+              <img src="img/img2.png" class="card-img-top" alt="corona-website">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">IplHeat</h5>
+              </div>
+           
+          </div>
+       
+        <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+           1.Fantasy and Live Score<br>
+           2.Trivia Page along with Team Section<br>
+           3.Stats Finder and News Section<br>
+          </p>
+      
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">Materialize</span>
+          <span class="badge badge-dark">NODEJS</span>
+          <span class="badge badge-dark">Express</span>
+         </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/iplHeat" target="_blank" style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://iplheat.herokuapp.com" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row second" id="my-project" style="margin-left:auto;margin-top:20px;display:flex;justify-content: center;">
+    <div class="flip-card different">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+           
+              <img src="img/th.jpg" class="card-img-top" alt="corona-website">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">Music Website</h5>
+  
+              </div>
+            
+          </div>
+       
+        <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+           1.Cookies for Sign In and Sign Up<br>
+           2.Built in Music Player Using JS<br>
+           3.Newsletter Section<br>
+          </p>
+      
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">Bootstrap</span>
+          <span class="badge badge-dark">NODEJS</span>
+          <span class="badge badge-dark">Express</span>
+          <span class="badge badge-dark">EJS</span>
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/JMUSIC" style="margin-right:30px;" target="_blank"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://enigmatic-tor-13609.herokuapp.com/" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+           
+              <img src="img/wire.png" class="card-img-top" alt="corona-website">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">JSS Wire</h5>
+  
+              </div>
+           
+          </div>
+       
+        <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+           1.Chat Rooms<br>
+           2.You can create Private Chat Room<br>
+           3.Built in Chatbot to enhance user's experience<br>
+           </p>
+      
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">Materialize</span>
+          <span class="badge badge-dark">NODEJS</span>
+          <span class="badge badge-dark">Express</span>
+          <span class="badge badge-dark">Socket.io</span>
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/JssWire" target="_blank" style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://jsswire.herokuapp.com" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+          <img src="img/1.jpg" class="card-img-top" alt="corona-website">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech Quest</h5>
+              </div>
+           </div>
+         <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+           1.Use of Local Storage to store User's Score<br>
+           2.You can create your Profile and update it<br>
+           3.Settings Page to enhance User's Experience<br>
+         </p>
+      
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">Foundation</span>
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/techquest" target="_blank"  style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://aman123956.github.io/techquest/" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="card project-title flip-card-front" style="width: 18rem;">
+           
+              <img src="img/product-1.png" class="card-img-top" alt="corona-website">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech-Store</h5>
+  
+              </div>
+          
+          </div>
+       
+        <div class="flip-card-back">
+          <h2 style="text-align: center;">Features:</h2>
+          <p style="text-align:left;font-size:0.9rem;">
+           1.Add to Cart<br>
+           2.Modal View on Hover Effect<br>
+           3.Payment through PayPal<br>
+          </p>
+      
+          <h2>Tech-Stack</h2>
+          <div>
+          <span class="badge badge-dark">HTML</span>
+          <span class="badge badge-dark">CSS</span>
+          <span class="badge badge-dark">JS</span>
+          <span class="badge badge-dark">ReactJS</span>
+          <span class="badge badge-dark">Bootstrap</span>
+          <span class="badge badge-dark">MAterial UI</span>
+          
+          </div>
+          <div style="margin-top:20px;">
+            <a href="https://github.com/AMAN123956/tech-store" target="_blank" style="margin-right:30px;"><button type="button" class="btn btn-outline-dark">CODE</button></a><span>
+            <a href="https://phone-hub.netlify.app/" target="_blank"><button type="button" class="btn btn-outline-dark">LIVE</button></a></span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Academics Details -->
+<section id="education">
+  <div id="education-header" style="background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+      <h2 style="color:#ffffff;"><span style="font-size:3.5rem">E</span>DUCATION</h2>
+    </div>
+    <div class="row" id="my-education" style="margin-left:auto">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card" id="e-card">
+         <img src="img/e-1.jpg" class="e-img">
+          <div class="card-body" style="color:#1B9CFC">
+            <h5 class="card-title" style="text-align: center;color:black;font-weight: 600;font-size:2rem;">Children Public Sr. Sec. School</h5>
+            <p style="text-align: center;color:grey">Kanpur,UP</p>
+            <h4 style="text-align: center;color:red">Academic Record</h4>
+            <p class="lead" style="text-align: center;">Class:10-<strong>9.6 cgpa</strong></p>
+            <p class="lead" style="text-align: center;">Class:12-<strong>90%</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
         <div class="card" id="e-card">
           <img src="img/e-2.jpg" class="e-img">
             <div class="card-body" style="color:#1B9CFC">
-              <h5 class="card-title" style="text-align: center;">JSS Academy of Technical Education</h5>
-              <p style="text-align: center;">C/20- Sector-62, Noida</p>
-              <h4 style="text-align: center;">Academic Record</h4>
+              <h5 class="card-title" style="text-align: center;color:black;font-weight: 600;font-size:2rem;">JSS Academy of Technical Education</h5>
+              <p style="text-align: center;color:grey">C/20- Sector-62, Noida</p>
+              <h4 style="text-align: center;color:red;">Academic Record</h4>
               <p class="lead" style="text-align: center;">1st Semester-<strong>9.09 cgpa</strong></p>
               <p class="lead" style="text-align: center;">2nd Semester-<strong>9.15 cgpa</strong></p>
             </div>
@@ -148,8 +449,8 @@
 
   <!-- Skills Detaiils -->
   <section id="skills" style="padding-bottom: 40px;">
-    <div id="skill-header">
-      <h2 style="color:#ffffff">Skills</h2>
+    <div id="skill-header" style="background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+      <h2 style="color:#ffffff;font-family: 'Montserrat', sans-serif;"><span style="font-size: 4rem;">S</span>KILLS</h2>
     </div>
     <div class="container" id="skill-container">
       <h2 style="text-align: center;margin-top: 20px;color:#1B9CFC">Scripting and Programming Language</h2>
@@ -296,14 +597,14 @@
 
   <!-- Accomplishment Section -->
   <section id="accomplishments">
-    <div id="a-header">
-      <h2 style="text-align: center;color:#ffffff;font-size:2.5rem;">Accomplishments</h2>
+    <div id="a-header" style="background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+      <h2 style="text-align: center;color:#ffffff;font-size:2.2rem;font-family: 'Montserrat', sans-serif;"><span style="font-size:3rem;">A</span>CCOMPLISHMENTS</h2>
     </div>
-    <div class="row" id="my-accomplishments" style="margin-left:-15px;">
+    <div class="row" id="my-accomplishments" style="margin-left:-20px">
       <div class="col-12 d-flex justify-content-center col-md-6 ">
-        <div class="card" id="a-card">
+        <div class="card aone" id="a-card" style="height: fit-content;">
           <img src="img/acc-2.png" class="a-img" id="a-img-res">
-          <div class="card-body" style="color:#1B9CFC">
+          <div class="card-body cone"  style="color:#1B9CFC;">
             <h5 class="card-title" style="text-align: center;color:black;text-decoration: underline;">Responsive Web Design</h5>
             <p style="text-align: center;color:red;">Free Code Camp</p>
             <h4 style="text-align: center;color:gray;">Insights</h4>
@@ -313,9 +614,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6  d-flex justify-content-center">
-        <div class="card" id="a-card">
+        <div class="card atwo" id="a-card" style="height: fit-content;">
           <img src="img/acc-1.jpg" class="a-img">
-          <div class="card-body" style="color:#1B9CFC">
+          <div class="card-body ctwo" style="color:#1B9CFC">
             <h5 class="card-title" style="text-align:center;color:black;text-decoration: underline;">Web Development BootCamp</h5>
             <p style="text-align: center;color:red">Instructor:Angela Yu</p>
             <h4 style="text-align: center;color:gray;">Insights</h4>
@@ -325,9 +626,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6  d-flex justify-content-center">
-        <div class="card" id="a-card">
+        <div class="card athree" id="a-card" style="height: fit-content;">
           <img src="img/ac-3.jpg" class="a-img" id="a-img-res">
-          <div class="card-body" style="color:#1B9CFC">
+          <div class="card-body cthree" style="color:#1B9CFC">
             <h5 class="card-title" style="text-align: center;color:black;text-decoration: underline;">Technical Support Fundamental</h5>
             <p style="text-align: center;color:red">Google</p>
             <h4 style="text-align: center;color:gray">Insights</h4>
@@ -338,9 +639,9 @@
         </div>
       </div>
       <div class="col-12 col-md-6  d-flex justify-content-center">
-        <div class="card" id="a-card">
+        <div class="card afour" id="a-card" style="height: fit-content;">
           <img src="img/acc-4.jpg" class="a-img" id="a-img-res">
-          <div class="card-body" style="color:#1B9CFC">
+          <div class="card-body cfour" style="color:#1B9CFC">
             <h5 class="card-title" style="text-align: center;color:black;text-decoration: underline;">Responsive Web Designing</h5>
             <p style="text-align: center;color:red">University of London</p>
             <h4 style="text-align: center;color:gray">Insights</h4>
@@ -352,47 +653,81 @@
       </div>
     </div>
  </section>
+ <section id="contact">
+  <div id="education-header" style="background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+    <h2 style="color:#ffffff;"><span style="font-size:3.5rem">C</span>ONTACT</h2>
+  </div>
+  <div class="content" style="border-radius: 7px;">
+    <div id="first-part" >
+    <span style="font-size:3rem;font-weight:1000;">S</span>ay 
+    <span style="font-size:3rem;font-weight:1000;">H</span>ello<br><p style="font-size:1.6rem;text-align:center;">I'll be in touch as soon as possible</p>
+    </div>
+    <div id="second-part">
+      <form action="mailto:amandixit033@gmail.com" method="POST">
+        <div class="form-group">
+          <label for="exampleFormControlInput1" style="font-size:1.7rem;font-weight:1000">Name</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1" style="font-size:1.7rem;font-weight:1000">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+       <div class="form-group">
+        <label for="exampleFormControlInput1" style="font-size:1.7rem;font-weight:1000">Subject</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Subject">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1" style="font-size:1.7rem;font-weight:1000">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="10"></textarea>
+        </div>
+        <button class="btn btn-primary" style="padding:4px;font-size:1.3rem;font-weight:1000;border-radius: 10px;width:160px;display:Block;margin-left:auto;margin-right: auto;">Submit</button>
+      </form>
+    </div>
+  </div>
+ </section>
+ 
 
   <!-- Footer Section -->
-  <section id="footer">
+  <section id="footer" style="margin-top:140px;padding-top:120px;padding-bottom: 60px; color:white;background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+    <div class="logo">AD</div>
     <h2 style="text-align:center;font-size:2rem"><i class="fa fa-quote-left" aria-hidden="true"></i></h2>
-    <p style="text-align:center;font-size:2rem;font-weight:1000">Code is like humour when you have to explain it's bad
+    <p style="text-align:center;font-size:2rem;font-weight:1000;margin-top:60px;">Code is like humour when you have to explain it's bad
     </p>
-    <h2 style="text-align:center;font-size:2rem"><i class="fa fa-quote-right" aria-hidden="true"></i></h2>
-    <h2 style="text-align:center;text-decoration-line: underline;margin-top:40px">Connect Me Through</h2>
-    <div  style="margin-top:20px;display:flex;align-items: center;justify-content: center;">
+    <h2 style="text-align:center;font-size:2rem;margin-top:60px;"><i class="fa fa-quote-right" aria-hidden="true"></i></h2>
+   
+    <div  style="margin-top:120px;display:flex;align-items: center;justify-content: center;">
       <div>
         <div class="layer">
           <a href="https://www.linkedin.com/in/aman-dixit-b371b9190/" target="_blank" id="profile-link"><i
-              class="fa fa-linkedin" aria-hidden="true" style="color:black"></i></a>
+              class="fa fa-linkedin" aria-hidden="true" style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
           <p id="lay">Linkedin</p>
         </div>
       </div>
       <div style="margin-left:70px;">
         <div class="layer">
           <a href="https://github.com/AMAN123956" id="profile-link" target="_blank"><i class="fa fa-github"
-              aria-hidden="true" style="color:black"></i></a>
+              aria-hidden="true"  style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
           <p id="lay">Github</p>
         </div>
       </div>
-      <div style="margin-left:70px;">
-        <div class="layer">
+    <div style="margin-left:70px;">
+      <div class="layer">
           <a href="https://www.freecodecamp.org/amandixit" target="_blank" id="profile-link"><i
-              class="fa fa-free-code-camp" aria-hidden="true" style="color:black;"></i></a>
+              class="fa fa-free-code-camp" aria-hidden="true"  style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
           <p id="lay">freeCC</p>
         </div>
       </div>
-      </div>
-      
-     <div style="margin-top:60px;">
-      <h4 style="text-align: center;">Designed & Developed by</h4>
-      <p style="text-align: center;">Aman Dixit</p>
-     </div>
+    </div>
+    <div style="margin-top:120px;">
+      <h4 style="text-align: center;">Designed & Developed By</h4>
+      <p style="text-align: center;font-size:1.5rem;font-weight: 500;font-family:'Montserrat', sans-serif"><span style="font-size:2rem;font-weight:700">A</span>MAN <span style="font-size:2rem;font-weight:800">D</span>IXIT</p>
+    </div>
   </section>
 
+
+
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script>
+ <script>
     const space = document.getElementById("space");
     setInterval(() => {
       space.style.display = "none";
@@ -401,7 +736,8 @@
       space.style.display = "inline-block";
     }, 2000);
  </script>
- <!-- Bootstrap JS -->
+  <!-- Bootstrap JS -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
