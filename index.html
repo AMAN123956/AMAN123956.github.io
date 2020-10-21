@@ -1,135 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="magic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     <title>Aman Dixit</title>
     <style>
-        body{
-            margin:0;
-            padding:0;
+        body {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            background-color:lightblue;
+            background-color: #1B9CFC;
+            background: url("img/background.jpg");
             animation-name: three;
-            animation-duration:1.5s;
+            animation-duration: 1.5s;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
             transition: 2s linear all;
-            animation-delay:0s;
+            animation-delay: 0s;
         }
-        .circle{
-            border: 2px solid red;
-            background-color: lightcoral;
-            background:url("https://media-exp1.licdn.com/dms/image/C5603AQHG2HBfNZ1PWw/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=DrOwRd8EgCLZKq5pdfSMCDVFC5_d7JIL9lzHi6cdWzA");
-            color:white;
-            border-radius: 100%;
-            display:block;
-            width:100px;
-            height:100px;
-            margin-left:auto;
-            margin-top: 15%;
-            padding:40px;
-            margin-right:auto;
-            animation-name:one;
+         #logo {
+            padding: 5px;
+            font-size: 4.3rem;
+            width: 160px;
+            margin: 15% auto;
+            height: 150px;
+            border-radius: 6px;
+            background-color: white;
+            color: #1B9CFC;
+         /*   animation-name: one;
             animation-delay: 0s;
             animation-duration: 1.5s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
-            transition:all 2s linear;
-            }
-            @keyframes one {
-                0%{
-                    border-color: red;
-                    
-                    transform: rotateY(0deg);
-                }
-                20%{
-                    border-color: blue;
-                    transform: rotateY(60deg);
-                }
-                50%{
-                    border-color: yellow;
-                    transform: rotateY(180deg);
-                }
-                70%{
-                    border-color: tomato;
-                    transform: rotateZ(270deg);
-                }
-                100%{
-                    border-color:green;
-                    transform: rotateZ(360deg);
-                }
-            }
-            h3{
-                text-align: center;
-                margin-top:80px;
-                animation-name: two;
-                animation-delay: 0s;
-                animation-timing-function: ease-in-out;
-                animation-duration: 1.5s;
-                animation-iteration-count: infinite;
-                animation-fill-mode: forwards;
-                transition:all 2s linear;
-            }
-            @keyframes two{
-                0%{
-                    border-color: red;
-                    color:#1B9CFC;
-                    transform: rotateY(0deg);
-                }
-                20%{
-                    border-color: blue;
-                    color:#1B9CFC;
-                    transform: rotateY(60deg);
-                }
-                50%{
-                    border-color: yellow;
-                    color:#1B9CFC;
-                    transform: rotateY(180deg);
-                }
-                70%{
-                    border-color: tomato;
-                    color:white;
-                    transform: rotateZ(240deg);
-                }
-                100%{
-                    border-color:green;
-                    color:white;
-                    transform: rotateZ(360deg);
-                }
-
-            }
-           /* @keyframes three{
-                0%{
-                    background:#1B9CFC;
-                }
-               
-                50%{
-                    backgroun
-                }
-               
-                100%{
-                    background:#1B9CFC;
-                } */
-            @media screen and (max-width:768px){
-                .circle{
-                    margin-top:25%;
-        
+            transition: all 2s linear; */
         }
+
+        @keyframes one {
+            0% {
+
+                transform: rotateY(0deg);
             }
+
+            20% {
+
+                transform: rotateY(60deg);
+            }
+
+            50% {
+
+                transform: rotateY(120deg);
+            }
+
+            70% {
+
+                transform: rotateZ(240deg);
+            }
+
+            100% {
+               
+                transform: rotateZ(360deg);
+            }
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 80px;
+            animation-name: two;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            transition: all 2s linear;
+        }
+        .magictime {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#bye{
+    display:none;
+}
     </style>
 </head>
+
 <body>
-     <div class="circle">
+    <!-- <div class="circle">
          <h3>Aman Dixit</h3>
-     </div>
-     <a href="profile.html" id="button" style="display:none;">Proceed</a>
-     <script>
-        const button = document.getElementById("button");
-         setTimeout(()=>{
-         button.click();
-         },4500);
-     </script>
+     </div> -->
+
+    <div class="d-flex align-items-center justify-content-center yourdiv" id="logo"
+        style="font-family: 'Sedgwick Ave', cursive;color:white;background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+        AD</div>
+    <h4 style="text-align:center" id="bye">I'm <span class="typing"></span>.</h4>
+   
+    <a href="profile.html" id="button" style="display:none;">Proceed</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+          
+           const heading = document.getElementById("bye");
+           setTimeout(()=>{
+        var typed = new Typed('.typing', {
+            strings: ["a Programmer", "a Web Developer", "a Blog Writer", "an Open Source Enthusiast"],
+            loop: true,
+            typeSpeed: 35,
+            backSpeed: 35
+        })},2000);
+      setTimeout(()=>{
+          heading.style.display="block";
+          const button = document.getElementById("button");
+           setTimeout(()=>{
+           button.click();
+           },4500); 
+      },2000);
+        const selector = document.querySelector('.yourdiv')
+        selector.classList.add('magictime', 'swap');
+
+    </script>
 </body>
 
 </html>
