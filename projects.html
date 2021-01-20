@@ -12,47 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Sedgwick+Ave&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .sone{
-      color:white;
-      position: absolute;
-      top:150px;
-      left:130px;
-      z-index:1;
-      display:none;
-  }
-  .flip-card{
-      box-shadow:0px 4px 10px 0px #1B9CFC;
-  }
- .flip-card:hover .flip-card-front{
-      opacity:0.8;
-      background-color:#1B9CFC;
-    }
-  .flip-card:hover .sone{
-      display:block;
-  }
-  .third{
-      display:none;
-  }
-  </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .sone {
+            color: white;
+            position: absolute;
+            top: 150px;
+            left: 130px;
+            z-index: 1;
+            display: none;
+        }
+
+        .flip-card {
+            box-shadow: 0px 4px 10px 0px #1B9CFC;
+        }
+
+        .flip-card:hover .flip-card-front {
+            opacity: 0.8;
+            background-color: #1B9CFC;
+        }
+
+        .flip-card:hover .sone {
+            display: block;
+        }
+
+        .third {
+            display: none;
+        }
+    </style>
 </head>
 
 <body id="page-top">
-   <nav>
-    <ul class="nav justify-content-end fixed-top d-flex align-items-center" id="navbar">
-       <a href="profile.html"><li class="navbar-brand  d-flex align-items-center justify-content-center" id="logo" style="font-family: 'Sedgwick Ave', cursive;">AD</li></a>
-        <li class="nav-item d-flex align-items-center justify-content-center icon" id="i1">
-          <a class="nav-link" href="profile.html" >
-            <i class="fa fa-arrow-left" aria-hidden="true" style="color:black;font-size:2rem;" ></i></a>
-            <span class="badge badge-primary" id="t1" style="position:absolute;top:100px;right:10px;">Go Back</span>
-           
-        </li>
+    <nav>
+        <ul class="nav justify-content-end fixed-top d-flex align-items-center" id="navbar">
+            <a href="profile.html">
+                <li class="navbar-brand  d-flex align-items-center justify-content-center" id="logo"
+                    style="font-family: 'Sedgwick Ave', cursive;">AD</li>
+            </a>
+            <li class="nav-item d-flex align-items-center justify-content-center icon" id="i1">
+                <a class="nav-link" href="profile.html">
+                    <i class="fa fa-arrow-left" aria-hidden="true" style="color:black;font-size:2rem;"></i></a>
+                <span class="badge badge-primary" id="t1" style="position:absolute;top:100px;right:10px;">Go Back</span>
 
-       <!-- <li class="nav-item d-flex align-items-center justify-content-center icon" id="i2">
+            </li>
+
+            <!-- <li class="nav-item d-flex align-items-center justify-content-center icon" id="i2">
           <a class="nav-link" href="#projects" >
             <i class="fa fa-laptop" aria-hidden="true" style="color:black;font-size:2rem;" ></i></a>
             <span class="badge badge-primary" id="t2" style="position:absolute;top:100px;">Projects</span>
@@ -62,10 +69,11 @@
             <i  aria-hidden="true" style="color:black;font-size:2rem;" >&lt;/&gt;</i></a>
             <span class="badge badge-primary" id="t3" style="position:absolute;top:100px;">Skills</span>
         </li> -->
-       
-        
-      </ul>
-   </nav>
+
+
+        </ul>
+    </nav>
+    <!--Navbar end -->
     <header class="masthead  text-white text-center" style="background-color: #1B9CFC;">
         <div class="container"><img class="img-fluid d-block mx-auto mb-5" style="border-radius:100%;"
                 src="https://media-exp1.licdn.com/dms/image/C5603AQHG2HBfNZ1PWw/profile-displayphoto-shrink_200_200/0/1592419898857?e=1612396800&v=beta&t=R7IkT5S3kUPPxYtPjeC3L1LVcEikJ8I59Iuz_Nd8eN4">
@@ -74,377 +82,394 @@
             <h2 class="font-weight-light mb-0">Web Developer - Programmer - User Experience Designer</h2>
         </div>
     </header>
-   
+
     <!-- Flip cards-->
     <section id="portfolio" class="portfolio">
         <h2 class="text-uppercase text-center text-secondary">Projects</h2>
-            <hr class="star-dark mb-5">
+        <hr class="star-dark mb-5">
         <div class="row" id="my-project" style="margin-top:40px;margin-left:auto;display:flex;justify-content: center;">
-          <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-1"> 
-            <div class="flip-card">
-              <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                  <img src="https://heysujal.xyz/src/images/heckfree.JPG" class="card-img-top" alt="mobile-img">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">HeckFree</h5>
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="https://magicmockups.com/media/screen/guest/14/c436bdaf998b4fc783296e89e8341ecc_22_960.jpg"
+                            class="card-img-top" alt="mobile-img">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">HeckFree</h5>
+                        </div>
                     </div>
-               </div>
-            </div>
-           </a>
-           <!-- JSS Connect Card -->
-           <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-2"> 
-            <div class="flip-card">
-               <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                  <img src="img/connect.png" class="card-img-top" alt="jss-connect">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">JSS Connect</h5>
+                </div>
+            </a>
+            <!-- JSS Connect Card -->
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/connect.png" class="card-img-top" alt="jss-connect">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">JSS Connect</h5>
+                        </div>
                     </div>
-               </div>
-            </div>
-           </a>
-           <!-- Ipl Heat Card-->
-           <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
-            <div class="flip-card">
-              <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                  <img src="img/img2.png" class="card-img-top" alt="corona-website">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">IplHeat</h5>
+                </div>
+            </a>
+            <!-- Ipl Heat Card-->
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/img2.png" class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">IplHeat</h5>
+                        </div>
                     </div>
-              </div>
-            </div>
-           </a>
-           <!-- Corona Website -->
-           <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-4"> 
-            <div class="flip-card">
-              <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                 <img src="img/symptoms.png" class="card-img-top" alt="calculator-image">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">Corona Info</h5>
+                </div>
+            </a>
+            <!-- Corona Website -->
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/symptoms.png" class="card-img-top" alt="calculator-image">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Corona Info</h5>
+                        </div>
                     </div>
-               </div>
-            </div>
-           </a>
-          
-        <!-- First Row Ending div -->
+                </div>
+            </a>
+
+            <!-- First Row Ending div -->
         </div>
         <!-- Second Row Starts -->
         <!-- Music Website -->
-        <div class="row second" id="my-project" style="margin-left:auto;margin-top:20px;display:flex;justify-content: center;">
-          <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
-            <div class="flip-card different">
-             <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                 <img src="img/th.jpg" class="card-img-top" alt="corona-website">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">Music Website</h5>
+        <div class="row second" id="my-project"
+            style="margin-left:auto;margin-top:20px;display:flex;justify-content: center;">
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
+                <div class="flip-card different">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/th.jpg" class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Music Website</h5>
+                        </div>
                     </div>
-             </div>
-            </div>
-          </a>
-          <!-- JSS Wire -->
-          <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-6">  
-           <div class="flip-card">
-             <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                 <img src="img/wire.png" class="card-img-top" alt="corona-website">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">JSS Wire</h5>
+                </div>
+            </a>
+            <!-- JSS Wire -->
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/wire.png" class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">JSS Wire</h5>
+                        </div>
                     </div>
-             </div>
-            </div>
-           </a>
-           <!-- Tech Quiz Hub Card -->
-           <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-7"> 
-            <div class="flip-card">
-              <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                 <img src="img/1.jpg" class="card-img-top" alt="corona-website">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech Quest</h5>
+                </div>
+            </a>
+            <!-- Tech Quiz Hub Card -->
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-7">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/1.jpg" class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech Quest</h5>
+                        </div>
                     </div>
-              </div>
-            </div>
-           </a>
-           <!-- Tech Store Card -->
-           <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-8"> 
-            <div class="flip-card">
-               <div class="card project-title flip-card-front" style="width: 18rem;">
-                <i class="sone fa fa-search-plus fa-3x"></i>
-                    <img src="img/product-1.png" class="card-img-top" alt="Tech-Website">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech-Store</h5>
+                </div>
+            </a>
+            <!-- Tech Store Card -->
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-8">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/product-1.png" class="card-img-top" alt="Tech-Website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech-Store</h5>
+                        </div>
                     </div>
-               </div>
+                </div>
+            </a>
+            <!-- Second Row Ends -->
+        </div>
+
+        <!-- Third Row Starts-->
+        <div class="row third" id="my-project" style="margin-left:auto;margin-top:20px;justify-content: center;">
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-9">
+                <div class="flip-card different">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="https://www.meharshit.xyz/techkartP.jpg" class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech Kart</h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-10">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUImDHwuRhnB5642mtB_b0JBxMoNCId3JEQ&usqp=CAU"
+                            class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Music Player</h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-11">
+                <div class="flip-card">
+                    <div class="card project-title flip-card-front" style="width: 18rem;">
+                        <i class="sone fa fa-search-plus fa-3x"></i>
+                        <img src="img/blog.png" class="card-img-top" alt="corona-website">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;color:#1B9CFC">Blogging Website</h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Third Row Ends -->
+        </div>
+    </section>
+    <!-- Footer -->
+    <!-- Footer Section -->
+    <section id="footer"
+        style="margin-top:140px;padding-top:120px;padding-bottom: 60px; color:white;background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
+        <div class="logo">AD</div>
+        <h2 style="text-align:center;font-size:2rem"><i class="fa fa-quote-left" aria-hidden="true"></i></h2>
+        <p style="text-align:center;font-size:2rem;font-weight:1000;margin-top:60px;">Code is like humour when you have
+            to explain it's bad
+        </p>
+        <h2 style="text-align:center;font-size:2rem;margin-top:60px;"><i class="fa fa-quote-right"
+                aria-hidden="true"></i></h2>
+
+        <div style="margin-top:120px;display:flex;align-items: center;justify-content: center;">
+            <div>
+                <div class="layer">
+                    <a href="https://www.linkedin.com/in/aman-dixit-b371b9190/" target="_blank" id="profile-link"><i
+                            class="fa fa-linkedin" aria-hidden="true"
+                            style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
+                    <p id="lay">Linkedin</p>
+                </div>
             </div>
-           </a>
-     <!-- Second Row Ends -->
-        </div>
-     
-     <!-- Third Row Starts-->
-     <div class="row third" id="my-project" style="margin-left:auto;margin-top:20px;justify-content: center;">
-        <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-9">
-          <div class="flip-card different">
-           <div class="card project-title flip-card-front" style="width: 18rem;">
-              <i class="sone fa fa-search-plus fa-3x"></i>
-               <img src="https://www.meharshit.xyz/techkartP.jpg" class="card-img-top" alt="corona-website">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;color:#1B9CFC">Tech Kart</h5>
-                  </div>
-           </div>
-          </div>
-        </a>
-        <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-10">  
-         <div class="flip-card">
-           <div class="card project-title flip-card-front" style="width: 18rem;">
-              <i class="sone fa fa-search-plus fa-3x"></i>
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUImDHwuRhnB5642mtB_b0JBxMoNCId3JEQ&usqp=CAU" class="card-img-top" alt="corona-website">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;color:#1B9CFC">Music Player</h5>
-                  </div>
-           </div>
-          </div>
-         </a>
-         <a class="portfolio-item" data-toggle="modal" href="#portfolio-modal-11"> 
-          <div class="flip-card">
-            <div class="card project-title flip-card-front" style="width: 18rem;">
-              <i class="sone fa fa-search-plus fa-3x"></i>
-               <img src="img/blog.png" class="card-img-top" alt="corona-website">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;color:#1B9CFC">Blogging Website</h5>
-                  </div>
+            <div style="margin-left:70px;">
+                <div class="layer">
+                    <a href="https://github.com/AMAN123956" id="profile-link" target="_blank"><i class="fa fa-github"
+                            aria-hidden="true"
+                            style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
+                    <p id="lay">Github</p>
+                </div>
             </div>
-          </div>
-         </a>
-       
-   <!-- Third Row Ends -->
-      </div>
-</section>
-<!-- Footer -->
- <!-- Footer Section -->
- <section id="footer" style="margin-top:140px;padding-top:120px;padding-bottom: 60px; color:white;background: url(img/b2.png);background-color: #1B9CFC;background-repeat: repeat-y;">
-    <div class="logo">AD</div>
-    <h2 style="text-align:center;font-size:2rem"><i class="fa fa-quote-left" aria-hidden="true"></i></h2>
-    <p style="text-align:center;font-size:2rem;font-weight:1000;margin-top:60px;">Code is like humour when you have to explain it's bad
-    </p>
-    <h2 style="text-align:center;font-size:2rem;margin-top:60px;"><i class="fa fa-quote-right" aria-hidden="true"></i></h2>
-   
-    <div  style="margin-top:120px;display:flex;align-items: center;justify-content: center;">
-      <div>
-        <div class="layer">
-          <a href="https://www.linkedin.com/in/aman-dixit-b371b9190/" target="_blank" id="profile-link"><i
-              class="fa fa-linkedin" aria-hidden="true" style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
-          <p id="lay">Linkedin</p>
+            <div style="margin-left:70px;">
+                <div class="layer">
+                    <a href="https://www.freecodecamp.org/amandixit" target="_blank" id="profile-link"><i
+                            class="fa fa-free-code-camp" aria-hidden="true"
+                            style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
+                    <p id="lay">freeCC</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div style="margin-left:70px;">
-        <div class="layer">
-          <a href="https://github.com/AMAN123956" id="profile-link" target="_blank"><i class="fa fa-github"
-              aria-hidden="true"  style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
-          <p id="lay">Github</p>
+        <div style="margin-top:120px;">
+            <h4 style="text-align: center;">Designed & Developed By</h4>
+            <p style="text-align: center;font-size:1.5rem;font-weight: 500;font-family:'Montserrat', sans-serif"><span
+                    style="font-size:2rem;font-weight:700">A</span>MAN <span
+                    style="font-size:2rem;font-weight:800">D</span>IXIT</p>
         </div>
-      </div>
-    <div style="margin-left:70px;">
-      <div class="layer">
-          <a href="https://www.freecodecamp.org/amandixit" target="_blank" id="profile-link"><i
-              class="fa fa-free-code-camp" aria-hidden="true"  style="color:black;background-color:white;padding:8px;border-radius:6px"></i></a>
-          <p id="lay">freeCC</p>
-        </div>
-      </div>
-    </div>
-    <div style="margin-top:120px;">
-      <h4 style="text-align: center;">Designed & Developed By</h4>
-      <p style="text-align: center;font-size:1.5rem;font-weight: 500;font-family:'Montserrat', sans-serif"><span style="font-size:2rem;font-weight:700">A</span>MAN <span style="font-size:2rem;font-weight:800">D</span>IXIT</p>
-    </div>
-  </section>
- <!-- Modals for Project -->
-<div class="d-lg-none scroll-to-top position-fixed rounded"><a
-        class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i
-            class="fa fa-chevron-up"></i></a></div>
-<!-- Heckfree Modal-->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Heck Free</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="assets/img/portfolio/submarine.png?h=71572e367539ee27f418326f2361bce2">
+    </section>
+    <!-- Modals for Project -->
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a
+            class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a></div>
+    <!-- Heckfree Modal-->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Heck Free</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5"
+                                    src="assets/img/portfolio/submarine.png?h=71572e367539ee27f418326f2361bce2">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
-                                <div class="text-left" style="font-size:1.3reml">
-                                    <li>Heckfree inspired by Linktree is a platform to manage all your Social account</li>
+                                <div class="text-left" style="font-size:1.5rem;text-align:center;">
+                                    <li>Heckfree inspired by Linktree is a platform to manage all your Social account
+                                    </li>
                                     <li>Built in Dashboard Page for managing your account</li>
                                     <li>Multiple Features to manipultate your Webpage.</li>
                                     <li>Passwort Reset using email verification</li>
                                     <li class="mb-5">Multi-step form layout</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary">HTML</span>
-                                <span class="badge badge-primary">CSS</span>
-                                <span class="badge badge-primary">JS</span>
-                                <span class="badge badge-primary">Fomantic</span>
-                                <span class="badge badge-primary">NodeJS</span>
-                                <span class="badge badge-primary">MongoDB</span>
-                                <span class="badge badge-primary">EJS</span>
-                               
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3 " style="font-size:1rem;">Fomantic</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">NodeJS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">MongoDB</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">EJS</span>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://heckfree.herokuapp.com" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://github.com/threefreespirited/heckfree" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- JSSConnect Modal-->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">JSS Connect</h2>
-                            <h5>An E-Library for all Engineering Students</h5>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" style="width:400px;height:300px;"
-                                src="img/connect.png?h=5bde47039f23de84a7748bee08793ac3">
-                            <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
-                            <div class="text-left" style="font-size:1.3rem;">
-                                <li>Blog Section</li>
-                                <li>Resource Section</li>
-                                <li>Community Section</li>
-                                <li class="mb-5">Security and Authentication through Google</li>
-                            </div>
-                            <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                            <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                            <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                            <span class="badge badge-primary" style="padding:6px;">JS</span>
-                            <span class="badge badge-primary" style="padding:6px;">Materialize</span>
-                            <span class="badge badge-primary" style="padding:6px;">NODEJS</span>
-                            <span class="badge badge-primary" style="padding:6px;">MongoDB</span>
-                            <span class="badge badge-primary" style="padding:6px;">Passport JS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto"><a
-                    class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://jssconnect.herokuapp.com" target="_blank">Live&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                    <a
-                    class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://jssconnect.herokuapp.com" target="_blank">Code&nbsp;&nbsp;&nbsp;<i class="fa fa-github"></i></a>
-                </div>
-        </div>
-    </div>
-</div>
-<!-- Corona Modal -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Go Corona Go!</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" style="width:400px;height:300px;"
-                                src="img/symptoms.png?h=4b5723e2b00006ef3a25df097c7187dd">
-                            <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
-                            <div class="text-left" style="font-size:1.3rem;">
-                                <li>.Chatbot which tells about your Probability of being Corona Postive</li>
-                                <li>Covid 19 Total Case Using an APIs</li>
-                                <li class="mb-5">.Precautions and Symptomps Section along with FAQ</li>
-                            </div>
-                            <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                            <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                            <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                            <span class="badge badge-primary" style="padding:6px;">JS</span>
-                            <span class="badge badge-primary" style="padding:6px;">BootStrap</span>
-                            <span class="badge badge-primary" style="padding:6px;">BoT-UI</span>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto"><a
-                class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://lazy-corona.netlify.app" target="_blank">Live&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                <a
-                class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://github.com/AMAN123956/korona-" target="_blank">Code&nbsp;&nbsp;&nbsp;<i class="fa fa-github"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Music Website Modal -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Music Website</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="assets/img/portfolio/circus.png?h=984b4ff719255fcbf2e01164905ebb90">
-                            <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
-                            <div class="text-left" style="font-size:1.3rem;">
-                                <li>Cookies for Sign In and Sign Up</li>
-                                <li>Built in Music Player Using JS</li>
-                                <li class="mb-5">Newsletter Section</li>
                             </div>
-                            <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                            <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                            <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                            <span class="badge badge-primary" style="padding:6px;">JS</span>
-                            <span class="badge badge-primary" style="padding:6px;">Bootstrap</span>
-                            <span class="badge badge-primary" style="padding:6px;">NODEJS</span>
-                            <span class="badge badge-primary" style="padding:6px;">Express</span>
-                            <span class="badge badge-primary" style="padding:6px;">EJS</span>
-
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://enigmatic-tor-13609.herokuapp.com/" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                    <a class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://enigmatic-tor-13609.herokuapp.com/" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>    
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg  portfolio-modal-dismiss" role="button"
+                        href="https://heckfree.herokuapp.com" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg  portfolio-modal-dismiss" role="button"
+                        href="https://github.com/threefreespirited/heckfree" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Techquest Modal-->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-7">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-2">Tech Quest</h2>
-                            <h5>Tech Quiz at next level</h5>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="img/1.jpg?h=b5df08ec517f8b9872be52e015333d8a">
+    <!-- JSSConnect Modal-->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">JSS Connect</h2>
+                                <h5>An E-Library for all Engineering Students</h5>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" style="width:400px;height:300px;"
+                                    src="img/connect.png?h=5bde47039f23de84a7748bee08793ac3">
+                                <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
+                                <div class="text-left" style="font-size:1.3rem;">
+                                    <li>Blog Section</li>
+                                    <li>Resource Section</li>
+                                    <li>Community Section</li>
+                                    <li class="mb-5">Security and Authentication through Google</li>
+                                </div>
+                                <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">Materialize</span>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">NODEJS</span>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">MongoDB</span>
+                                <span class="badge badge-primary mb-2" style="font-size:1rem;">Passport JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5 mx-auto"><a
+                        class="btn btn-outline-primary btn-lg   portfolio-modal-dismiss" role="button"
+                        href="https://jssconnect.herokuapp.com" target="_blank">Live&nbsp;&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg   portfolio-modal-dismiss" role="button"
+                        href="https://jssconnect.herokuapp.com" target="_blank">Code&nbsp;&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Corona Modal -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Go Corona Go!</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" style="width:400px;height:300px;"
+                                    src="img/symptoms.png?h=4b5723e2b00006ef3a25df097c7187dd">
+                                <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
+                                <div class="text-left" style="font-size:1.3rem;">
+                                    <li>.Chatbot which tells about your Probability of being Corona Postive</li>
+                                    <li>Covid 19 Total Case Using an APIs</li>
+                                    <li class="mb-5">.Precautions and Symptomps Section along with FAQ</li>
+                                </div>
+                                <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">BootStrap</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">BoT-UI</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5 mx-auto"><a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss"
+                        role="button" href="https://lazy-corona.netlify.app" target="_blank">Live&nbsp;&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/AMAN123956/korona-" target="_blank">Code&nbsp;&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Music Website Modal -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Music Website</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5"
+                                    src="assets/img/portfolio/circus.png?h=984b4ff719255fcbf2e01164905ebb90">
+                                <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
+                                <div class="text-left" style="font-size:1.3rem;">
+                                    <li>Cookies for Sign In and Sign Up</li>
+                                    <li>Built in Music Player Using JS</li>
+                                    <li class="mb-5">Newsletter Section</li>
+                                </div>
+                                <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Bootstrap</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">NODEJS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Express</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">EJS</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://enigmatic-tor-13609.herokuapp.com/" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://enigmatic-tor-13609.herokuapp.com/" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Techquest Modal-->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-7">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-2">Tech Quest</h2>
+                                <h5>Tech Quiz at next level</h5>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5"
+                                    src="img/1.jpg?h=b5df08ec517f8b9872be52e015333d8a">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.3rem;">
                                     <li>Settings Feature to manage your Profile</li>
@@ -452,39 +477,40 @@
                                     <li class="mb-5">Multiple Levels to play</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:6px;">JS</span>
-                                <span class="badge badge-primary" style="padding:6px;">Bootstrap</span>
-                               
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Bootstrap</span>
 
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://techquest.netlify.app"  target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                    <a
-                    class="btn btn-outline-primary btn-lg  rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://aman123956.github.io/techquest/"  target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>     
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://techquest.netlify.app" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://aman123956.github.io/techquest/" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Iplheat Modal -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Ipl Heat</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="assets/img/portfolio/safe.png?h=77cbc82936acf11b03bd687ff795e835">
+    <!-- Iplheat Modal -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Ipl Heat</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5"
+                                    src="assets/img/portfolio/safe.png?h=77cbc82936acf11b03bd687ff795e835">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.3rem;">
                                     <li>Live Score Updated every Second</li>
@@ -493,43 +519,46 @@
                                         3.Stats Finder and News Section<br>
                                     </li>
                                     <li>You can catch all the IPL related updates and data on the go.</li>
-                                    <li class="mb-5">It deals in providing player statistics ,IPL schedule ,IPL points table ,teams data and many more.</li>
+                                    <li class="mb-5">It deals in providing player statistics ,IPL schedule ,IPL points
+                                        table ,teams data and many more.</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:6px;">JS</span>
-                                <span class="badge badge-primary" style="padding:6px;">Materialize</span>
-                                <span class="badge badge-primary" style="padding:6px;">APIs</span>
-                                <span class="badge badge-primary" style="padding:6px;">NodeJS</span>
-                               
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Materialize</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">APIs</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">NodeJS</span>
 
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://iplheat.herokuapp.com" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                    <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                    href="https://github.com/AMAN123956/iplHeat" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://iplheat.herokuapp.com" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/AMAN123956/iplHeat" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Tech Kart Modal -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-9">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Tech Kart</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="https://www.meharshit.xyz/techkartP.jpg" alt="mobile-mockup-image">
+    <!-- Tech Kart Modal -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-9">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Tech Kart</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5"
+                                    src="https://www.meharshit.xyz/techkartP.jpg" alt="mobile-mockup-image">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.3rem;">
                                     <li>Add to Cart Features</li>
@@ -537,38 +566,40 @@
                                     <li class="mb-5">Online Ordering</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:5px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:5px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:5px;">JS</span>
-                                <span class="badge badge-primary" style="padding:5px;">Bootstrap</span>
-                               
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Bootstrap</span>
 
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://techkart.netlify.app" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-            <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://github.com/aman123956/techkart" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://techkart.netlify.app" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/aman123956/techkart" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- JSS WIRE MODAL-->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">JSS Wire</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="img/wire.png" alt="JSS-WIRE IMG">
+    <!-- JSS WIRE MODAL-->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">JSS Wire</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="img/wire.png"
+                                    alt="JSS-WIRE IMG">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.3rem;">
                                     <li> 1.Chat Rooms</li>
@@ -576,41 +607,44 @@
                                     <li class="mb-5">3.Built in Chatbot to enhance user's experience</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:5px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:5px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:5px;">JS</span>
-                                <span class="badge badge-primary" style="padding:5px;">Materialize</span>
-                                <span class="badge badge-primary" style="padding:5px;">NODEJS</span>
-                                <span class="badge badge-primary" style="padding:5px;">Express</span>
-                                <span class="badge badge-primary" style="padding:5px;">Socket.io</span>
-                               
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Materialize</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">NODEJS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Express</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Socket.io</span>
 
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://jsswire.herokuapp.com" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-            <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://github.com/AMAN123956/JssWire" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://jsswire.herokuapp.com" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/AMAN123956/JssWire" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Music Player MODAL -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-10">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Music Player</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUImDHwuRhnB5642mtB_b0JBxMoNCId3JEQ&usqp=CAU" alt="music-player-img">
+    <!-- Music Player MODAL -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-10">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Music Player</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUImDHwuRhnB5642mtB_b0JBxMoNCId3JEQ&usqp=CAU"
+                                    alt="music-player-img">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.2rem;">
                                     <li> 1.You can move through songs using Prev and Next Btn</li>
@@ -618,36 +652,38 @@
                                     <li class="mb-5">3.Beautifully Designed Player</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:6px;">JS</span>
-                                <span class="badge badge-primary" style="padding:6px;">Bootstrap</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Bootstrap</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="aman123956.github.io/music-app/" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-            <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://github.com/AMAN123956/music-app" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="aman123956.github.io/music-app/" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/AMAN123956/music-app" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Blog Website Modal -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-11">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Personal Blogging Website</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="img/blog.png" alt="book-cover-img">
+    <!-- Blog Website Modal -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-11">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Personal Blogging Website</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="img/blog.png"
+                                    alt="book-cover-img">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.2rem;">
                                     <li> 1.Blog Collection</li>
@@ -655,36 +691,38 @@
                                     <li class="mb-5">3.Excellent UI Design</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:6px;">JS</span>
-                                <span class="badge badge-primary" style="padding:6px;">Bootstrap</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Bootstrap</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://javascript-blogs.netlify.app/" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-            <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://github.com/AMAN123956/Blogging-Website" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://javascript-blogs.netlify.app/" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/AMAN123956/Blogging-Website" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Tech Store Modal -->
-<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-8">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Tech Store</h2>
-                            <hr class="star-dark mb-5"><img class="img-fluid mb-5"
-                                src="img/product-1.png" alt="mobile-phone-img">
+    <!-- Tech Store Modal -->
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-8">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Tech Store</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="img/product-1.png"
+                                    alt="mobile-phone-img">
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Features</h3>
                                 <div class="text-left" style="font-size:1.2rem;">
                                     <li>1.Add to Cart</li>
@@ -692,46 +730,51 @@
                                     <li class="mb-5">3.Payment through PayPal</li>
                                 </div>
                                 <h3 class="mb-2" style="color:#1B9CFC;font-family:sans-serif">Tech Stacks</h3>
-                                <span class="badge badge-primary" style="padding:6px;">HTML</span>
-                                <span class="badge badge-primary" style="padding:6px;">CSS</span>
-                                <span class="badge badge-primary" style="padding:6px;">JS</span>
-                                <span class="badge badge-primary" style="padding:6px;">ReactJS</span>
-                                <span class="badge badge-primary" style="padding:6px;">Bootstrap</span>
-                                <span class="badge badge-primary" style="padding:6px;">Material UI</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">HTML</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">CSS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">JS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">ReactJS</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Bootstrap</span>
+                                <span class="badge badge-primary mb-3" style="font-size:1rem;">Material UI</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer pb-5 mx-auto">
-                <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://phone-hub.netlify.app/" target="_blank">Live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-            <a class="btn btn-outline-primary btn-lg rounded-pill portfolio-modal-dismiss" role="button"
-                href="https://github.com/AMAN123956/tech-store" target="_blank">Code&nbsp;&nbsp;<i class="fa fa-github"></i></a>
+                <div class="modal-footer pb-5 mx-auto">
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://phone-hub.netlify.app/" target="_blank">Live&nbsp;&nbsp;<i
+                            class="fa fa-arrow-right"></i></a>
+                    <a class="btn btn-outline-primary btn-lg portfolio-modal-dismiss" role="button"
+                        href="https://github.com/AMAN123956/tech-store" target="_blank">Code&nbsp;&nbsp;<i
+                            class="fa fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<script src="assets/js/freelancer.js?h=c39cf000ef6adba0f85349e55288c80d"></script>
-<script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js?h=991afcfa41cba2f581d9aab17dc1d26a"></script>
-<script>
-  window.onscroll = function() {scrollFunction()};
- const thirdRow = document.querySelector(".third");
-function scrollFunction() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-     console.log(document.documentElement.scrollTop);
-     setTimeout(()=> {
-     thirdRow.style.display="flex";},500);
-  } 
-  else if(document.body.scrollTop < 1000 || document.documentElement.scrollTop < 1000){
-    thirdRow.style.display="none";
-  }
-}
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/freelancer.js?h=c39cf000ef6adba0f85349e55288c80d"></script>
+    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js?h=991afcfa41cba2f581d9aab17dc1d26a"></script>
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+        const thirdRow = document.querySelector(".third");
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                console.log(document.documentElement.scrollTop);
+                setTimeout(() => {
+                    thirdRow.style.display = "flex";
+                }, 500);
+            } else if (document.body.scrollTop < 1000 || document.documentElement.scrollTop < 1000) {
+                thirdRow.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
