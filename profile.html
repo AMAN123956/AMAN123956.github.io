@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Sedgwick+Ave&display=swap" rel="stylesheet">
   <!-- Font Awesome CDN-->
   <script src="https://use.fontawesome.com/2f6bccba41.js"></script>
+  <!-- Animation library css -->
+  <link rel="stylesheet" href="magic.min.css">
   <title>Aman Dixit|Web Dev</title>
 </head>
 
@@ -388,145 +390,129 @@
       <h2 style="color:#ffffff;font-family: 'Montserrat', sans-serif;"><span style="font-size: 4rem;">S</span>KILLS</h2>
     </div>
     <div class="container" id="skill-container">
-      <h2 style="text-align: center;margin-top: 20px;color:#1B9CFC">Scripting and Programming Language</h2>
-      <div class="row" style="margin-left:-2%;" id="skill-title">
-        <div class="col-6 col-md-2 ">
-          <div class="progress blue">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">HTML</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2 ">
-          <div class="progress yellow">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">CSS</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress pink">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">JavaScript</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress green">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">C++</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress red">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">NodeJS</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress yellow">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">C</div>
-          </div>
-        </div>
+      <div class="badge-box" style="">
+        <button type="button" class="btn btn-labeled btn-danger skill-button">
+          <span class="btn-label"><i class="fa fa-code" aria-hidden="true"></i></span>
+          FRONTEND
+        </button>
+        <button type="button" class="btn btn-labeled btn-primary skill-button">
+          <span class="btn-label"><i class="fa fa-code" aria-hidden="true"></i></span>
+          BACKEND
+        </button>
+        <button type="button" class="btn btn-labeled btn-success skill-button">
+          <span class="btn-label"><i class="fa fa-code" aria-hidden="true"></i></span>
+          DATABASES
+        </button>
+        <button type="button" class="btn btn-labeled btn-secondary skill-button">
+          <span class="btn-label"><i class="fa fa-code" aria-hidden="true"></i></span>
+           FRAMEWORKS
+        </button>
+        <button type="button" class="btn btn-labeled btn-dark skill-button">
+          <span class="btn-label"><i class="fa fa-code" aria-hidden="true"></i></span>
+           VERSION CONTROL
+        </button>
       </div>
+      <h2 class="skill-heading" style="text-align: center;font-weight:800;margin-top: 40px;color:red;text-decoration: underline;">FRONTEND TECHNOLOGIES</h2>
+      <div class="row skill-box" style="display:flex;align-items: center;justify-content: center;" id="skill-title">
+        <div class="col-6 col-md-2" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+         <img
+         style="width:100%;height:150px;"
+         src="https://raw.githubusercontent.com/johan/kilobyte-svg-challenge/master/logos/html5.svg" alt="html-img"
+         >
+         <h2 style="margin-top:10px;">HTML</h2>
+        </div>
+        <div class="col-6 col-md-2" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+          <img
+          style="width:100%;height:150px;" 
+          src="https://raw.githubusercontent.com/leungwensen/svg-icon/master/dist/svg/logos/css-3.svg" alt="Javascript_image">
+          <h2 style="margin-top:10px;">CSS</h2>
+        </div>
+        <div class="col-md-2 col-6" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+          <img
+          style="width:100%;height:150px;" 
+          src="https://gitlab.svg.zone/omniait/developer-logos/raw/master/logos/front-end-web/javascript.svg" alt="Javascript_image">
+          <h2 style="margin-top:10px;">JavaScript</h2>
+        </div>
+        <div class="col-md-2 col-6" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+          <img
+          style="width:100%;height:150px;" 
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="ReactJS_image">
+          <h2 style="margin-top:10px;">ReactJS</h2>
+        </div>
+        
+      </div>
+      <!-- Backend -->
+      <div class="row skill-box" style="display:none;align-items: center;justify-content: center;" id="skill-title">
+        <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+         <img
+         style="width:100%;height:150px;"
+         src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="node-js-img"
+         >
+         <h2 style="margin-top:10px;">NodeJS</h2>
+        </div>
+        <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+          <img
+          style="width:100%;height:150px;" 
+          src="https://www.meharshit.xyz/images/logos/EXPRESSJSlogo.png" alt="expressjs_image">
+          <h2 style="margin-top:10px;">ExpressJS</h2>
+        </div>
+        <div class="col-md-3 col-6" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+          <img
+          style="width:100%;height:150px;" 
+          src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/passport.svg" alt="passportjs_image">
+          <h2 style="margin-top:10px;">PassportJS</h2>
+        </div>
+        
+        
+      </div>
+       <!-- Databases -->
+       <div class="row skill-box" style="display:none;align-items: center;justify-content: center;" id="skill-title">
+        <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+         <img
+         style="width:100%;height:150px;"
+         src="https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg" alt="mongodb-img"
+         >
+         
+        </div>
+        <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+          <img
+          style="width:100%;height:150px;" 
+          src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="firebase_image">
+          
+        </div>
+       </div>
+        <!-- Frameworks -->
+        <div class="row skill-box" style="display:none;align-items: center;justify-content: center;" id="skill-title">
+          <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+            <img
+            style="width:100%;height:150px;" 
+            src="https://raw.githubusercontent.com/AliasIO/Wappalyzer/master/src/drivers/webextension/images/icons/Bootstrap.svg" alt="materialzecss_image">
+             <h2 style="margin-top:10px;">Bootstrap</h2>
+          </div>
+          <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+            <img
+            style="width:100%;height:150px;" 
+            src="https://raw.githubusercontent.com/prplx/svg-logos/master/svg/materialize.svg" alt="materialzecss_image">
+             <h2 style="margin-top:10px;">Materialize CSS</h2>
+          </div>
+        </div>
+        <!-- Version Control -->
+        <div class="row skill-box" style="display:none;align-items: center;justify-content: center;" id="skill-title">
+          <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+            <img
+            style="width:100%;height:150px;"
+            src="https://raw.githubusercontent.com/xtoolkit/Micon/master/icons/webbrand/github.svg" alt="github-img">
+            <h2 style="text-align:center;margin-top:10px;">GITHUB</h2>
+           </div>
+          <div class="col-6 col-md-3" style="display:flex;flex-direction:column;align-items:center;justify-content: center;">
+             <img
+             style="width:100%;height:150px;" 
+             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git_image">
+             <h2 style="text-align:center;margin-top:10px;">GIT</h2>
+          </div>
+        </div>
       <hr>
-      <h2 id="frameworks" style="text-align: center;margin-top: 40px;color:#1B9CFC">Frameworks and Technologies</h2>
-      <div class="row my-5" style="margin-left:-2%;">
-        <div class="col-md-2 col-6">
-          <div class="progress blue1">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">Bootstrap</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress yellow1">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">Express</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress pink1">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">Foundation</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress green1">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">Node JS</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress red1">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">React JS</div>
-          </div>
-        </div>
-        <div class="col-md-2 col-6">
-          <div class="progress yellow1">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value">Materialize</div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </section>
 
@@ -697,6 +683,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
+  <script src="assets/js/profile.js"></script>
 </body>
 
 </html>
