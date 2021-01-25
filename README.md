@@ -1,2 +1,2 @@
 ##  My Personal Portfolio Website
-### Desgined and Coded By in ❤ by Me.
+### Designed and Coded By in ❤ by Me.
