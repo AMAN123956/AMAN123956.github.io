@@ -5,7 +5,7 @@
     width:100vw;
     font-family: "sans-serif";
     background:linear-gradient(to top left,white 40%,white);
-  /*background-color: #f5f6fa;
+    /*background-color: #f5f6fa;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   /*This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     overflow-x:hidden;
@@ -17,7 +17,7 @@
     background-repeat: repeat-y;
     color:white;
     font-size:2rem;
-    z-index:2;
+    z-index:8;
     padding:15px 0px;
     padding-right:10px;
 }
@@ -81,7 +81,7 @@ h1{
 #about-content{
     text-align: center;
     font-size:1.7rem;
-    padding:0px 80px;
+    padding:0px 90px;
     margin-top:50px;
 }
 #one{
@@ -125,7 +125,7 @@ h1{
    /* background-color:#1B9CFC ; */
 
     background: url("img/background.jpg");
-    margin-top:18%;
+    margin-top:4%;
     padding:0px;
     text-align: center;
     width:100vw;
@@ -171,7 +171,6 @@ img{
 #footer{
     color:white;
     padding-top:20px;
-    padding-left:30px;
     padding-bottom: 10px;
   /*  background-color: white; */
     background-color:#1B9CFC ;
@@ -494,7 +493,7 @@ h3{
     #about-content{
         text-align: left;
         font-weight:300;
-        font-size:1rem;
+        font-size:1.5rem;
         padding:0px 20px;
     }
     #one{
@@ -597,10 +596,10 @@ h3{
         margin-top: 10%;
     }
     #about-content{
+        margin-top:20px;
         text-align: left;
-        font: size 1.3rem;
         font-weight:400;
-        font-size:1.5rem;
+        font-size:1.7rem;
         padding:0px 20px;
     }
     #profile_img{
@@ -827,4 +826,53 @@ h3{
            width:50px;
            margin-right:10px;
       }
+}
+
+
+/* Floating button */
+.floating-button{
+   position:sticky;
+   z-index:+3;
+   float:right;
+   right:2px;
+   bottom:100px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   width:50px;
+   height:50px;
+   border-radius: 100%;
+   background-color:black;
+   color:#1B9CFC;
+   padding:20px;
+   cursor:pointer;
+   transition: 1s linear all;
+   animation-name: circular;
+   animation-delay:0s;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite;
+   animation-duration: 0.8s;
+   animation-timing-function: ease-in-out;
+}
+@keyframes circular{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.floating-item{
+    font-size:2rem;
+    color:darkgrey;
+    font-weight:1000;
+}
+.floating-button:hover .floating-item{
+    zoom:1.2;
+}
+
+@media screen and (max-width:768px){
+    .floating-button{
+        display:none;
+    }
 }
